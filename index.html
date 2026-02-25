@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宜北中学学生委员会 - 首页</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入图标库（用于装饰和交互） -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+    <!-- 顶部信息栏 -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fa fa-bullhorn"></i> 宜北中学学生委员会</span>
+            <span class="time" id="current-time"></span>
+      </div>
+    </div>
+
+    <!-- 头部导航 -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">宜北中学 <span>学生会</span></h1>
+            <nav class="main-nav">
+                <a href="index.html" class="active"><i class="fa fa-home"></i> 首页</a>
+                <a href="about.html"><i class="fa fa-info-circle"></i> 学生会简介</a>
+                <a href="member.html"><i class="fa fa-users"></i> 主席团成员</a>
+                <a href="news.html"><i class="fa fa-newspaper-o"></i> 新闻动态</a>
+                <a href="notice.html"><i class="fa fa-bell"></i> 通知公告</a>
+                <a href="activity.html"><i class="fa fa-trophy"></i> 校园活动</a>
+                <a href="contact.html"><i class="fa fa-envelope"></i> 联系我们</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 横幅 -->
+    <section class="banner">
+        <div class="banner-overlay"></div>
+        <img src="images/banner.jpg"class="banner-img" alt="宜北中学大门">
+        <div class="banner-text">
+            <h2>服务同学 · 引领学风</h2>
+            <p>共建宜北美好校园</p>
+            <a href="activity.html" class="banner-btn">查看精彩活动</a>
+      </div>
+    </section>
+
+    <!-- 主体三栏 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 左侧导航 -->
+            <aside class="sidebar-left">
+                <div class="sidebar-box glass-card">
+                    <h3><i class="fa fa-navicon"></i> 导航菜单</h3>
+                    <ul>
+                        <li><a href="index.html" class="active">首页</a></li>
+                        <li><a href="about.html">学生会简介</a></li>
+                        <li><a href="member.html">主席团成员</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="notice.html">通知公告</a></li>
+                        <li><a href="activity.html">校园活动</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 新增：天气/日期卡片 -->
+                <div class="sidebar-box glass-card weather-card">
+                    <h3><i class="fa fa-calendar"></i> 今日校园</h3>
+                    <div class="weather-info">
+                        <i class="fa fa-sun-o"></i>
+                        <div>
+                            <div id="date">2026年2月25日</div>
+                            <div id="week">星期三</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 中间新闻 -->
+            <section class="content-center">
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a> > <span>新闻动态</span>
+                </div>
+                
+                <div class="section-title">
+                    <h2>最新动态</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="news-list">
+                    <!-- 新闻1 -->
+                    <article class="news-item glass-card">
+                        <div class="news-tag">重要</div>
+                        <img src="images/ news1.jpg.jpg" class="news-img" alt="学生代表大会">
+                        <div class="news-info">
+                            <h4 class="news-title"><a href="news1.html">宜北中学第六十一届学生代表大会召开，周扬当选学生会会长</a></h4>
+                            <div class="news-date"><i class="fa fa-clock-o"></i> 2026-02-25</div>
+                            <p class="news-desc">宜北中学第六十一届学生代表大会隆重召开，周扬以绝对优势当选学生会会长，擘画学生会未来发展蓝图。</p>
+                            <a href="news1.html" class="read-more">阅读全文 <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- 新闻2 -->
+                    <article class="news-item glass-card">
+                        <img src="images/news2.jpg" class="news-img" alt="干部工作会议">
+                        <div class="news-info">
+                            <h4 class="news-title"><a href="news2.html">周扬会长主持召开新学期第一次全体干部工作会议</a></h4>
+                            <div class="news-date"><i class="fa fa-clock-o"></i> 2026-02-23</div>
+                            <p class="news-desc">新学期学生会第一次全体干部工作会议如期召开，由会长周扬主持。会议对本学期重点工作进行了安排，明确了各部门职责。</p>
+                            <a href="news2.html" class="read-more">阅读全文 <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- 新闻3 -->
+                    <article class="news-item glass-card">
+                        <div class="news-tag hot">热门</div>
+                        <img src="images/music_festival.jpg" class="news-img" alt="音乐节">
+                        <div class="news-info">
+                            <h4 class="news-title"><a href="news3.html">宜北音乐节激情开唱，舞台高光不断</a></h4>
+                            <div class="news-date"><i class="fa fa-clock-o"></i> 2025-12-28</div>
+                            <p class="news-desc">年度校园音乐节圆满落幕，现场气氛热烈，宜北学子不断带来精彩表演，唱跳俱佳，展现了独特的舞台魅力。</p>
+                            <a href="news3.html" class="read-more">阅读全文 <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- 新闻4 -->
+                    <article class="news-item glass-card">
+                        <img src="images/sports_meeting.jpg .jpg" class="news-img" alt="运动会">
+                        <div class="news-info">
+                            <h4 class="news-title"><a href="news4.html">秋季运动会圆满收官，高二（1）班强势夺冠</a></h4>
+                            <div class="news-date"><i class="fa fa-clock-o"></i> 2025-11-15</div>
+                            <p class="news-desc">宜北中学秋季运动会顺利结束。在备受关注的短跑项目中，高二（1）班运动员凭借出色的爆发力斩获金牌。</p>
+                            <a href="news4.html" class="read-more">阅读全文 <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 右侧信息 -->
+            <aside class="sidebar-right">
+                <div class="sidebar-box glass-card">
+                    <h3><i class="fa fa-exclamation-circle"></i> 通知公告</h3>
+                    <ul class="notice-list">
+                        <li><a href="notice1.html"><i class="fa fa-circle"></i> 校园文明岗执勤安排（3月第1周）</a></li>
+                        <li><a href="notice2.html"><i class="fa fa-circle"></i> 校园文化艺术节节目征集通知</a></li>
+                        <li><a href="notice3.html"><i class="fa fa-circle"></i> 春季运动会志愿者招募启事</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box glass-card president-card">
+                    <h3><i class="fa fa-star"></i> 主席团风采</h3>
+                    <div class="avatar-container">
+                        <img src="images/zhouyang.jpg.jpg"class="avatar" alt="周扬">
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="person-name">周扬</div>
+                    <div class="person-role">学生会会长</div>
+                    <p class="president-speech">
+                        “用身体诉说故事，让每个眼神都绽放生命的力量。”
+                    </p>
+                </div>
+
+                <!-- 新增：关注我们 -->
+                <div class="sidebar-box glass-card">
+                    <h3><i class="fa fa-weixin"></i> 关注我们</h3>
+                    <div class="qrcode">
+                        <img src="images/qrcode.jpg" alt="微信公众号">
+                        <p>宜北中学学生会</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">宜北中学学生委员会</div>
+                <div class="footer-links">
+                    <a href="about.html">关于我们</a>
+                    <a href="contact.html">联系我们</a>
+                    <a href="#">网站地图</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 宜北中学学生委员会 版权所有 | 地址：XX省XX市宜北区宜北中学</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        // 实时时间
+        function updateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const weekDays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            const week = weekDays[now.getDay()];
+            
+            document.getElementById('current-time').textContent = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+            document.getElementById('date').textContent = `${year}年${month}月${day}日`;
+            document.getElementById('week').textContent = week;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        // 滚动显示效果
+        window.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            document.querySelector('.banner-img').style.transform = `scale(1.05) translateY(${scrollY * 0.05}px)`;
+        });
+    </script>
+</body>
+</html>
